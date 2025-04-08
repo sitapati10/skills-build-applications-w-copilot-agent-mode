@@ -5,7 +5,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev/api/users')
+    fetch('https://crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

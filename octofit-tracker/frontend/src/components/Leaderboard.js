@@ -5,7 +5,7 @@ function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
 
   useEffect(() => {
-    fetch('https://crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev/api/leaderboard')
+    fetch('https://crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev/api/leaderboard/')
       .then(response => response.json())
       .then(data => setLeaderboard(data));
   }, []);

@@ -5,7 +5,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev/api/activities')
+    fetch('https://crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev/api/activities/')
       .then(response => response.json())
       .then(data => setActivities(data));
   }, []);
