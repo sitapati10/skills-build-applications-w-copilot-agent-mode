@@ -6,7 +6,7 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = request.build_absolute_uri('/')
+    base_url = "https://crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev/" if request.get_host() == "crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev" else request.build_absolute_uri('/')
     return Response({
         'users': base_url + 'api/users/',
         'teams': base_url + 'api/teams/',
