@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-wjg8-y#3gom(fcz8_!u#&jl_-e!-ay$+#d(u$90_8mx5+mk1sf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['crispy-pancake-q579pj4wwjxfqvj-8000.app.github.dev', 'localhost']
 
 
 # Application definition
